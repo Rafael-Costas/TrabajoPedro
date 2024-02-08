@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link rel="stylesheet" type="text/css" href="detalles.css">
+</head>
+<body>
+
+    <div class="a">
+    <select id="select" onchange="mostrar()" class="b">
+        <option value="0" id="opcion0">opcion1</option>
+        <option value="1" id="opcion1">Opción 2</option>
+        <option value="2" id="opcion2">Opción 3</option>
+        <option value="3" id="opcion3">Opción 1</option>
+        <option value="4" id="opcion4">Opción 1</option>
+        <option value="5" id="opcion5">Opción 1</option>
+        <option value="6" id="opcion6">Opción 1</option>
+        <option value="7" id="opcion7">Opción 1</option>
+        <option value="8" id="opcion8">Opción 1</option>
+        <option value="9" id="opcion9">Opción 1</option>
+        <option value="10" id="opcion10">Opción 1</option>
+        
+        <option selected="true" >Choose Your Weapon</option>
+      </select>
+
+    <img id="weapon0" style="display: none;">
+    <img id="weapon1" style="display: none;">
+    <img id="weapon2" style="display: none;">
+    <img id="weapon3" style="display: none;">
+    <img id="weapon4" style="display: none;">
+    <img id="weapon5" style="display: none;">
+    <img id="weapon6" style="display: none;">
+    <img id="weapon7" style="display: none;">
+    <img id="weapon8" style="display: none;">
+    <img id="weapon9" style="display: none;">
+    <img id="weapon10" style="display: none;">
+    <img id="weapon11"style="display: none;">
+    <img id="weapon12" style="display: none;">
+   
+   
+</div>
+   
+</body>
+
+
+<script>
+     function mostrar(){
+     
+        seleccion=document.getElementById('select')
+        selectedOption = select.options[select.selectedIndex].value;
+        for (i = 0; i <= 11; i++) {
+                document.getElementById('weapon' + i).style.display = 'none';
+            }
+        document.getElementById('weapon' + selectedOption).style.display = 'block';
+    }
+
+
+</script>
+<script src="api.js"></script>
+</html>

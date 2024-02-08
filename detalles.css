@@ -1,0 +1,23 @@
+body{
+    background-image: url(Imagenes/monster.jpg);
+   background-image: no-repeat;
+    background-size: 100%;
+}
+.a{
+ margin-left: 40%;
+
+ height: 15em;
+max-width: 13em;
+border:1px solid black;
+background:url(Imagenes/fondo-papel-grunge-vintage.jpg);
+
+
+
+
+}
+
+.b{
+   opacity: 1;
+    margin-top: 5%;
+    margin-left: 2em;
+}
