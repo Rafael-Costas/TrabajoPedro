@@ -7,7 +7,7 @@
         return imageURL
     });
   */  
-    for ( let i = 0, a=1; i < 11; i+=1, a+=100) {
+    for ( let i = 0, a=1; i < 13; i+=1, a+=90) {
       const url='https://mhw-db.com/weapons/'+a
       fetch(url)
       .then(response => response.json())

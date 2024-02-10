@@ -21,10 +21,15 @@
         <option value="8" id="opcion8">Opción 1</option>
         <option value="9" id="opcion9">Opción 1</option>
         <option value="10" id="opcion10">Opción 1</option>
+        <option value="11" id="opcion11">Opción 1</option>
+        <option value="12" id="opcion12">Opción 1</option>
+
+       
+
         
         <option selected="true" >Choose Your Weapon</option>
       </select>
-
+<div style="text-align: center;">
     <img id="weapon0" style="display: none;">
     <img id="weapon1" style="display: none;">
     <img id="weapon2" style="display: none;">
@@ -37,7 +42,9 @@
     <img id="weapon9" style="display: none;">
     <img id="weapon10" style="display: none;">
     <img id="weapon11"style="display: none;">
-    <img id="weapon12" style="display: none;">
+    <img id="weapon12"style="display: none;">
+</div>
+    
    
    
 </div>
@@ -50,7 +57,7 @@
      
         seleccion=document.getElementById('select')
         selectedOption = select.options[select.selectedIndex].value;
-        for (i = 0; i <= 11; i++) {
+        for (i = 0; i <= 12; i++) {
                 document.getElementById('weapon' + i).style.display = 'none';
             }
         document.getElementById('weapon' + selectedOption).style.display = 'block';
